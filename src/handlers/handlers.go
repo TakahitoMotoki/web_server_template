@@ -21,7 +21,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
     panic(err)
   }
 
-  db.ConnectToDB()
+  db.Index()
 }
 
 func TestHandler(w http.ResponseWriter, r *http.Request) {
