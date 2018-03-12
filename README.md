@@ -2,15 +2,15 @@
 
 ### 1. Execution Environment Construction
 #### 1.1. Set your $GOPATH in ~/.zshrc
-(1) Go to web_server_template
-(2) Type $pwd
-(3) Copy the path to ~/.zshrc like this:
+1. Go to web_server_template
+2. Type $pwd
+3. Copy the path to ~/.zshrc like this:
   export GOPATH=$XXX/XXX/XXX/XXX/web_server_template
 
 #### 1.2. Get some packages from github.com
 Type the command below
-(1) $ go get github.com/gorilla/mux
-(2) $ go get github.com/go-sql-driver/mysql
+1. $ go get github.com/gorilla/mux
+2. $ go get github.com/go-sql-driver/mysql
 
 ### 2. Explanation of each files
 #### 2.1. server.go
