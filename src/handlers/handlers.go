@@ -15,9 +15,10 @@ import(
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
   fmt.Println("Welcome!")
-  person1 := models.Person{Id: 1, Name: "Takahito Motoki", Age: 21}
+  // person1 := models.Person{Id: 1, Name: "Takahito Motoki", Age: 21}
+  people := db.Index()
 
-  if err := json.NewEncoder(w).Encode(person1); err != nil {
+  if err := json.NewEncoder(w).Encode(people); err != nil {
     panic(err)
   }
 
